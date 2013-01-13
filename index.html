@@ -9,59 +9,17 @@
 var f = [0,0,0,0,0];
 function dd(d)
 {
-    var div=$(d);
-    var p = ((f)%2==0) ? '300px' : '0px';
-    var o = ((f++)%2==0) ? '0.8' : '0.0';
+    var ii=d-1;
+    var div=$("span"+d.toString());
+    for(var i = 0; i<f.length; i++){if(i!=ii&&f[i]%2!=0){$("span"+(i+1).toString()).animate({width:'0px', opacity:'0.0'},"fast");
+        setTimeout(function(){$("span"+(i+1).toString()).css('display','none');},1000);f[i]++;}}
+    var p = ((f[ii])%2==0) ? '400px' : '0px';
+    var d = ((f[ii])%2==0) ? 'inline' : 'none';
+    var o = ((f[ii]++)%2==0) ? '0.8' : '0.0';
+    if(d=='inline') div.css('display', d);
     div.animate({width:p,opacity:o},"fast");
+    if(d=='none') setTimeout(function(){div.css('display', d);},500);
 }
-$(document).ready(function(){
-  $("p1").click(function(){
-    var div=$("span1");
-    
-    for(var i = 0; i<f.length; i++){if(i!=0&&f[i]%2!=0){$("span"+(i+1).toString()).animate({width:'0px', opacity:'0.0'},"fast");$("span"+(i+1).toString()).css('display','none');f[i]++;}}
-    var p = ((f[0])%2==0) ? '300px' : '0px';
-    var d = ((f[0])%2==0) ? 'inline' : 'none';
-    var o = ((f[0]++)%2==0) ? '0.8' : '0.0';
-    div.css('display', d);
-    div.animate({width:p,opacity:o},"fast");
-  });
-  $("p2").click(function(){
-    var div=$("span2");
-    for(var i = 0; i<f.length; i++){if(i!=1&&f[i]%2!=0){$("span"+(i+1).toString()).animate({width:'0px', opacity:'0.0'},"fast");$("span"+(i+1).toString()).css('display','none');f[i]++;}}
-    var p = ((f[1])%2==0) ? '300px' : '0px';
-    var d = ((f[1])%2==0) ? 'inline' : 'none';
-    var o = ((f[1]++)%2==0) ? '0.8' : '0.0';
-    div.css('display', d);
-    div.animate({width:p,opacity:o},"fast");
-  });
-  $("p3").click(function(){
-    var div=$("span3");
-    for(var i = 0; i<f.length; i++){if(i!=2&&f[i]%2!=0){$("span"+(i+1).toString()).animate({width:'0px', opacity:'0.0'},"fast");$("span"+(i+1).toString()).css('display','none');f[i]++;}}
-    var p = ((f[2])%2==0) ? '400px' : '0px';
-    var d = ((f[2])%2==0) ? 'inline' : 'none';
-    var o = ((f[2]++)%2==0) ? '0.8' : '0.0';
-    div.css('display', d);
-    div.animate({width:p,opacity:o},"fast");
-  });
-  $("p4").click(function(){
-    var div=$("span4");
-    for(var i = 0; i<f.length; i++){if(i!=3&&f[i]%2!=0){$("span"+(i+1).toString()).animate({width:'0px', opacity:'0.0'},"fast");$("span"+(i+1).toString()).css('display','none');f[i]++;}}
-    var p = ((f[3])%2==0) ? '400px' : '0px';
-    var d = ((f[3])%2==0) ? 'inline' : 'none';
-    var o = ((f[3]++)%2==0) ? '0.8' : '0.0';
-    div.css('display', d);
-    div.animate({width:p,opacity:o},"fast");
-  });
-  $("p5").click(function(){
-    var div=$("span5");
-    for(var i = 0; i<f.length; i++){if(i!=4&&f[i]%2!=0){$("span"+(i+1).toString()).animate({width:'0px', opacity:'0.0'},"fast");$("span"+(i+1).toString()).css('display','none');f[i]++;}}
-    var p = ((f[4])%2==0) ? '300px' : '0px';
-    var d = ((f[4])%2==0) ? 'inline' : 'none';
-    var o = ((f[4]++)%2==0) ? '0.8' : '0.0';
-    div.css('display', d);
-    div.animate({width:p,opacity:o},"fast");
-  });
-});
 </script> 
 
 <style>
@@ -80,7 +38,6 @@ p {
 }
 p1,p2,p3,p4,p5,p6,p7 {
 	margin-left: 20%;
-	/*color:gray;*/
 	font-family: "Droid Serif";
 }
 span1,span2,span3,span4,span5,span6,span7 {
@@ -94,18 +51,17 @@ span1,span2,span3,span4,span5,span6,span7 {
 <body>
 	
 <h1>mlfong</h1></br>
-<!-- <p1> <a href="#" onclick="dd()"> about</a> </p1> -->
-<p1> <a href="#" > about&nbsp;&nbsp;&nbsp;&nbsp;</a> </p1>
+<p1> <a href="#" onclick="dd(1)"> about&nbsp;&nbsp;&nbsp;&nbsp;</a> </p1>
  <span1 style="background:#ebebeb;height:300px;width:100px;opacity:0.0;margin-left:10%;position:absolute;">
-mlfong is an undergrad @ georgia tech </br></br> his focuses are computer architecture and artificial intelligence </br></br> he works as a teaching assistant, having taught discrete math for cs majors and is currently teaching artificial intelligence
+mlfong is an undergrad @ georgia tech </br></br> his focuses are computer architecture and artificial intelligence </br></br> he works as a teaching assistant, having taught discrete math for cs majors and is currently teaching artificial intelligence</br></br>while not programming, he likes to spend his time drinking bubble tea and taking <u><a href="http://instagram.com/p/UZRbBqx0ov/" target="_blank">pictures</a></u> of said bubble tea
 </span1></br>
 
-<p2> <a href="#" > projects</a> </p2>
+<p2> <a href="#" onclick="dd(2)"> projects</a> </p2>
 <span2 style="background:#ebebeb;height:300px;width:100px;opacity:0.0;margin-left:10%;position:absolute;">
  PROJECTS
 </span2></br>
 
-<p3> <a href="#" > classes&nbsp;&nbsp;</a> </p3>
+<p3> <a href="#" onclick="dd(3)">classes&nbsp;&nbsp;</a> </p3>
 <span3 style="background:#ebebeb;height:1000px;width:100px;opacity:0.0;margin-left:10%;position:absolute;">
 spring 2012</br>
 <p>CS 3240 - Languages and Computation</br>CS 3251 - Computer Networking I </br>CS 3630 - Perception &amp; Robotics </br>CS 4290 - Advanced Computer Organization </br>CS 4911 - Design Capstone Project </br>CS 3600 TA - Introduction to Artificial Intelligence</p>
@@ -121,11 +77,11 @@ fall 2010</br>
 <p>CS 1100 - Freshmen Leap for CS</br>CS 1332 - Data Structures &amp; Algorithms</br>EAS 1601 - Habitable Planet</br>ENGL 1102 - English Composition II</br>MATH 1502 - Calculus II</p>
 </span3></br>
 
-<p4> <a href="#" > resume&nbsp;</a> </p4>
+<p4> <a href="#" onclick="dd(4)"> resume&nbsp;</a> </p4>
 <span4 style="background:#ebebeb;height:300px;width:100px;opacity:0.0;margin-left:10%;position:absolute;">
  <a href="https://www.dropbox.com/s/w3d7yne0gvu60er/resume.pdf" target="_blank"> <i>resume link</i> </a>
 </span4></br>
-<p5> <a href="#" > links&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> </p5>
+<p5> <a href="#" onclick="dd(5)"> links&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> </p5>
 <span5 style="background:#ebebeb;height:300px;width:100px;opacity:0.0;margin-left:10%;position:absolute;">
  LINKS
 </span5></br>
