@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<head>
+<title>mlfong</title>
+<link rel="icon" type="image/png" href="/favicon.png">
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<script> 
+var f = 0;
+$(document).ready(function(){
+  $("p1").click(function(){
+    var div=$("span");
+    var p = ((f)%2==0) ? '300px' : '0px';
+    var o = ((f++)%2==0) ? '0.8' : '0.0';
+    div.animate({width:p,opacity:o},"fast");
+  });
+});
+</script> 
+
+<style>
+h1 {
+    margin-left: 20%;
+    margin-top: 5%;
+    /*color:gray;*/
+    font-family: "Droid Serif";
+}
+p1 {
+	margin-left: 20%;
+	/*color:gray;*/
+	font-family: "Droid Serif";
+}
+span {
+	font-family: "Droid Serif";
+}
+</style>
+
+</head>
+
+<body>
+	
+<!-- <div style="background:#98bf21;height:100px;width:100px;position:absolute;"> -->
+
+
+<h1>mlfong</h1></br>
+<p1 >about
+
+</p1>
+ <span style="background:#a9a9a9;height:300px;width:100px;opacity:0.0;margin-left:10%;position:absolute;">
+mlfong is an undergrad @ georgia tech </br> his focuses are computer architecture and artificial intelligence </br> he works as a teaching assistant, having taught discrete math for cs majors and is currently teaching artificial intelligenc
+</span>
+<!-- <div style="background:#98bf21;height:100px;width:100px;margin-left:25%;">
+hi
+</div> -->
+
+</br>
+<p1>classes</p1>
+</br>
+<p1>projects</p1></br>
+<p1>resume</p1></br>
+<p1>links</p1>
+	
+</body>
+
+
+
+
+
+
+
+
+
