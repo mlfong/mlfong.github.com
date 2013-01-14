@@ -12,7 +12,7 @@ function dd(d)
     var ii=d-1;
     var div=$("span"+d.toString());
     for(var i = 0; i<f.length; i++){if(i!=ii&&f[i]%2!=0){$("span"+(i+1).toString()).animate({width:'0px', opacity:'0.0'},"fast");
-        setTimeout(function(){$("span"+(i+1).toString()).css('display','none');},1000);f[i]++;}}
+        $("span"+(i+1).toString()).css('display','none');f[i]++;}}
     var p = ((f[ii])%2==0) ? '400px' : '0px';
     var d = ((f[ii])%2==0) ? 'inline' : 'none';
     var o = ((f[ii]++)%2==0) ? '0.8' : '0.0';
