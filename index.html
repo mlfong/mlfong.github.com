@@ -1,128 +1,142 @@
-<!DOCTYPE HTML>
-<head>
-<title>mlfong</title>
-<link rel="icon" type="image/png" href="/favicon.png">
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
-<script> 
-var f = [0,0,0,0,0];
-function dd(d)
-{
-    var ii=d-1;
-    var div=$("span"+d.toString());
-    for(var i = 0; i<f.length; i++){if(i!=ii&&f[i]%2!=0){$("span"+(i+1).toString()).animate({width:'0px', opacity:'0.0'},"fast");
-        $("span"+(i+1).toString()).css('display','none');f[i]++;}}
-    var p = ((f[ii])%2==0) ? '400px' : '0px';
-    var d = ((f[ii])%2==0) ? 'inline' : 'none';
-    var o = ((f[ii]++)%2==0) ? '1.0' : '0.0';
-    if(d=='inline') div.css('display', d);
-    div.animate({width:p,opacity:o},"fast");
-    if(d=='none') setTimeout(function(){div.css('display', d);},500);
-}
-</script> 
-
-<style>
-html {
-overflow: -moz-scrollbars-vertical; 
-overflow-y: scroll;
-}
-a {text-decoration:none}
-A:LINK    {Color: #000000}
-A:VISITED {Color: #000000}
-A:HOVER   {Color: #c0d6e4}
-h1 {
-    margin-left: 20%;
-    margin-top: 5%;
-    font-family: "Droid Serif";
-}
-p {
-    font-family: "Droid Serif";
-}
-p1,p2,p3,p4,p5,p6,p7 {
-	margin-left: 20%;
-	font-family: "Droid Serif";
-}
-span1,span2,span3,span4,span5,span6,span7 {
-	font-family: "Droid Serif";
-    display: none;
-}
-a1 {
-    margin-left: 20%;
-    font-family: "Droid Serif";
-}
-</style>
-
-</head>
-
-<body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Man Fong &middot; Software Artificer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 	
-<h1>mlfong</h1></br>
-<p1> <a href="#" onclick="dd(1)"> about&nbsp;&nbsp;&nbsp;&nbsp;</a> </p1>
- <span1 style="background:#ffffff;height:500px;width:100px;opacity:0.0;margin-left:10%;position:absolute;">
-Hi, I'm Man! </br>
-<img border="0" src="http://www.gravatar.com/avatar/85339d9c9d0a848f5f8ba7b0e4fbe968?s=200"></br> I'm a 3rd year CS undergrad @ Georgia Tech. </br></br>My focuses are computer systems and <div title="My favorite!">artificial intelligence.</div></br> I work as a teaching assistant, having taught discrete math and am currently teaching artificial intelligence.</br></br>While not programming, I like spending my time drinking bubble tea and taking <u><a href="http://instagram.com/p/UZRbBqx0ov/" target="_blank">pictures</a></u> of said bubble tea. I'm also a big supporter of <u><a href="http://www.twloha.com/" target="_blank">TWLOHA</a></u> and you'll frequently see me wearing their merch.
-</br>
+	<!-- not super great at ui design, i've dabbled and you can check out my old sites on my github,
+	but right now i'm just going to leave it bootstrapped -->
 
-</span1></br>
+    <!-- CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
 
-<p2> <a href="#" onclick="dd(2)"> projects</a> </p2>
-<span2 style="background:#ffffff;height:900px;width:100px;opacity:0.0;margin-left:10%;position:absolute;">
-  <p>
-    <a href="http://mlfong.github.com/minesweeper-gtk/">
-        <img src="https://raw.github.com/mlfong/minesweeper-gtk/master/screenshots/completedgame.png">
-    </a>
-    <a href="http://mlfong.github.com/minesweeper-gtk/"></br>
-    <u><b>minesweeper</b></u>
-    </a></br>
-    final project for cs-2804</br> done in c++ and uses the gtkmm package (compile-compatible with any OS, given gtkmm is installed)
-</p></br>
-<p>
-    <a href="http://mlfong.github.com/strong-induction-generator/">
-        <img src="https://raw.github.com/mlfong/strong-induction-generator/master/screenshots/frame_cropped.png" width='300px'>
-    </a>
-    <a href="http://mlfong.github.com/strong-induction-generator/"></br>
-    <u><b>strong induction generator</b></u>
-    </a></br>
-    TA artifact for cs-2050 </br> java frame/applet that generates postage problems to test students on their strong induction knowledge
-</p>
-</br></br></br></br>
-</span2></br>
+      /* Sticky footer styles
+      -------------------------------------------------- */
 
-<p3> <a href="#" onclick="dd(3)">classes&nbsp;&nbsp;</a> </p3>
-<span3 style="background:#ffffff;height:1000px;width:100px;opacity:0.0;margin-left:10%;position:absolute;">
-spring 2012</br>
-<p>CS 3240 - Languages and Computation</br>CS 3251 - Computer Networking I </br>CS 3630 - Perception &amp; Robotics </br>CS 4290 - Advanced Computer Organization </br>CS 4911 - Design Capstone Project </br>CS 3600 TA - Introduction to Artificial Intelligence</p>
-fall 2012</br>
-<p>CS 2804 - Special Topics: Advanced Object Oriented Programming</br>CS 3510 - Design &amp; Analysis: Algorithms </br>CS 4635 - Knowledge Based AI </br>ISYE 3770 - Statistics &amp; Applications </br>CS 3600 TA - Introduction to Artificial Intelligence </p>
-spring 2012</br>
-<p>CS 3210 - Operating System Design</br>CS 4001 - Computing &amp; Society</br>CS 4641 - Machine Learning</br>CS 4699 - Undergraduate Research</br>LCC 3403 - Technical Communication</br>CS 2050 TA - Intro to Discrete Math for CS</p>
-fall 2011</br>
-<p>CS 2200 - Computer Systems &amp; Networks</br>CS 2340 - Objects &amp; Design</br>CS 3600 - Introduction to Artificial Intelligence</br>CS 4801 - Undergraduate TA Course</br>CS 4903 - Special Topics (UTA)</br>ECON 2106 - Microeconomics</br>MATH 3012 - Applied Combinatorics</br>CS 2050 TA - Intro to Discrete Math for CS</p>
-spring 2011</br>
-<p>CS 1050 - Constructing Proofs</br>CS 2110 - Computer Organization &amp; Programming</br>HPS 1040 - Health</br>MATH 2605 - Calculus III for CS</br>PSYC 1101 - Intro to Psychology</p>
-fall 2010</br>
-<p>CS 1100 - Freshmen Leap for CS</br>CS 1332 - Data Structures &amp; Algorithms</br>EAS 1601 - Habitable Planet</br>ENGL 1102 - English Composition II</br>MATH 1502 - Calculus II</p>
-</span3></br>
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
 
-<p4> <a href="#" onclick="dd(4)"> resume&nbsp;</a> </p4>
-<span4 style="background:#ffffff;height:300px;width:100px;opacity:0.0;margin-left:10%;position:absolute;">
- <a href="https://www.dropbox.com/s/w3d7yne0gvu60er/resume.pdf" target="_blank"> <i>Resume link</i> </a>
-</span4></br>
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
 
-<p5> <a href="#" onclick="dd(5)"> links&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> </p5>
-<span5 style="background:#ffffff;height:100px;width:100px;opacity:0.0;margin-left:10%;position:absolute;">
- <a href="https://github.com/mlfong" target="_blank">GitHub</a> </br>
- <a href="http://instagram.com/skyangelisme" target="_blank">Instagram</a> </br>
-</span5></br>
-	
-</body>
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
 
 
 
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
+
+      .container {
+        width: auto;
+        max-width: 680px;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+
+    </style>
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="bootstrap/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="bootstrap/ico/favicon.ico">
+  </head>
+
+  <body>
+
+
+    <!-- Part 1: Wrap all page content here -->
+    <div id="wrap">
+
+      <!-- Begin page content -->
+      <div class="container">
+        <div class="page-header">
+          <h1>Man Fong</h1>
+        </div>
+        <p> <!-- class="lead"> -->
+	Self proclaimed cool kid and software artificer. I recently finished my undergraduate studies at Georgia Tech, specializing in artificial intelligence and computer systems in my BS in computer science, where I also worked as TA for our <a href="http://www.cc.gatech.edu/~riedl/classes/2013/cs3600/index.html" target="_">undergraduate artificial intelligence course </a> and previously discrete math. 
+	</p>
+        <p>
+        	My favorite things to do are sleep, listen to music, and take pictures of <a href="http://instagram.com/p/UZRbBqx0ov/" target="_">bubble tea</a>, and of course, programming. You can check out a selection of my projects and resume from the links below.
+        </p>
+		
+      </div>
+
+      <div id="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit"> follow me: 
+			<a href="http://www.instagram.com/skyangelisme" target="_">
+			<img src="bootstrap/ico/instagram.ico" title="instagram" alt="instagram" width="32" height="32"></a>
+			<a href="http://www.github.com/mlfong" target="_">
+			<img src="bootstrap/ico/github.jpg" title="github" alt="github" width="32" height="32"></a>
+			<a href="https://www.dropbox.com/s/w3d7yne0gvu60er/resume.pdf" target="_">
+			<img src="bootstrap/ico/resume.png" title="resume" alt="resume" width="32" height="32"></a>
+			</p>
+	<!-- <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p> -->
+      </div>
+    </div>
 
 
 
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap-transition.js"></script>
+    <script src="bootstrap/js/bootstrap-alert.js"></script>
+    <script src="bootstrap/js/bootstrap-modal.js"></script>
+    <script src="bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="bootstrap/js/bootstrap-tab.js"></script>
+    <script src="bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="bootstrap/js/bootstrap-popover.js"></script>
+    <script src="bootstrap/js/bootstrap-button.js"></script>
+    <script src="bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="bootstrap/js/bootstrap-typeahead.js"></script>
 
-
-
+  </body>
+</html>
