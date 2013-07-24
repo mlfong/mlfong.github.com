@@ -1,142 +1,163 @@
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Man Fong &middot; Software Artificer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-	
-	<!-- not super great at ui design, i've dabbled and you can check out my old sites on my github,
-	but right now i'm just going to leave it bootstrapped -->
 
-    <!-- CSS -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
 
-      /* Sticky footer styles
-      -------------------------------------------------- */
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<STYLE>
+<!--
+a {text-decoration:none}
+A:LINK    {Color: #000000}
+A:VISITED {Color: #000000}
+A:HOVER   {Color: #C0C0C0}
+//-->
 
-      html,
-      body {
-        height: 100%;
-        /* The html and body elements cannot have any padding or margin. */
-      }
+</STYLE>
 
-      /* Wrapper for page content to push down footer */
-      #wrap {
-        min-height: 100%;
-        height: auto !important;
-        height: 100%;
-        /* Negative indent footer by it's height */
-        margin: 0 auto -60px;
-      }
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>mlfong</title>
+<link rel="icon" 
+      type="image/png" 
+      href="/~icons/favicon.ico">
+     
+        <link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
+    
+</head>
+</br></br>
+</br></br>
+</br></br>
+<p align="center">
+<font size="6" face="Open Sans" color="black">
+Man Fong
+</font>
 
-      /* Set the fixed height of the footer here */
-      #push,
-      #footer {
-        height: 60px;
-      }
-      #footer {
-        background-color: #f5f5f5;
-      }
+<font size="4" face="Open Sans" color="black">
+<hr align="center" width="50%" />
 
-      /* Lastly, apply responsive CSS fixes as necessary */
-      @media (max-width: 767px) {
-        #footer {
-          margin-left: -20px;
-          margin-right: -20px;
-          padding-left: 20px;
-          padding-right: 20px;
-        }
-      }
+<p align="center">
 
+<a href="#" id="about-show" class="showLink" onclick="showHide('about');return false;">
+about
+</a>
 
+<a href="#" id="projects-show" class="showLink" onclick="showHide('projects');return false;">
+projects
+</a>
 
-      /* Custom page CSS
-      -------------------------------------------------- */
-      /* Not required for template or sticky footer method. */
+<a href="#" id="courses-show" class="showLink" onclick="showHide('courses');return false;">
+courses
+</a>
 
-      .container {
-        width: auto;
-        max-width: 680px;
-      }
-      .container .credit {
-        margin: 20px 0;
-      }
+<a href="#" id="resume-show" class="showLink" onclick="showHide('resume');return false;">
+follow-me
+</a>
 
-    </style>
-    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+</font>
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="bootstrap/js/html5shiv.js"></script>
-    <![endif]-->
+</p>
+<hr align="center" width="50%" />
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="bootstrap/ico/favicon.ico">
-  </head>
+<body>
+<div id="wrap">
 
-  <body>
-
-
-    <!-- Part 1: Wrap all page content here -->
-    <div id="wrap">
-
-      <!-- Begin page content -->
-      <div class="container">
-        <div class="page-header">
-          <h1>Man Fong</h1>
-        </div>
-        <p> <!-- class="lead"> -->
-	Self proclaimed cool kid and software artificer. I recently finished my undergraduate studies at Georgia Tech, specializing in artificial intelligence and computer systems in my BS in computer science, where I also worked as TA for our <a href="http://www.cc.gatech.edu/~riedl/classes/2013/cs3600/index.html" target="_">undergraduate artificial intelligence course </a> and previously discrete math. 
-	</p>
-        <p>
-        	My favorite things to do are sleep, listen to music, and take pictures of <a href="http://instagram.com/p/UZRbBqx0ov/" target="_">bubble tea</a>, and of course, programming. You can check out a selection of my projects and resume from the links below.
+        <div id="about" class="more">
+          <i> <p class="thick">software gardener</p> </i>
+        <p class="about">
+          I am a recent college grad, getting my BS in computer science from Georgia Tech, where I specialized in artificial intelligence and computer systems. I worked there as a TA for our <b><a href="http://www.cc.gatech.edu/~riedl/classes/2013/cs3600/index.html" target="_aita">undergraduate artificial intelligence course </a></b> and previously discrete math. Now I am a west coast tech-for-tech guy having previously been a tech-for-finance engineer type on the east coast.
+          </br></br>
+          Recently I have started really getting into indie games, the genre is especially interesting to me. A stark contrast to typical "mainstream" games that I am more used to. It is amazing to me to see what a handful (if even!) of people can do in terms of technology, music, and storytelling.          
         </p>
-		
-      </div>
-
-      <div id="push"></div>
-    </div>
-
-    <div id="footer">
-      <div class="container">
-        <p class="muted credit"> follow me: 
-			<a href="http://www.instagram.com/skyangelisme" target="_">
-			<img src="bootstrap/ico/instagram.ico" title="instagram" alt="instagram" width="32" height="32"></a>
-			<a href="http://www.github.com/mlfong" target="_">
-			<img src="bootstrap/ico/github.jpg" title="github" alt="github" width="32" height="32"></a>
-			<a href="https://www.dropbox.com/s/w3d7yne0gvu60er/resume.pdf" target="_">
-			<img src="bootstrap/ico/resume.png" title="resume" alt="resume" width="32" height="32"></a>
-			</p>
-	<!-- <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p> -->
-      </div>
-    </div>
-
-
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="bootstrap/js/jquery.js"></script>
-    <script src="bootstrap/js/bootstrap-transition.js"></script>
-    <script src="bootstrap/js/bootstrap-alert.js"></script>
-    <script src="bootstrap/js/bootstrap-modal.js"></script>
-    <script src="bootstrap/js/bootstrap-dropdown.js"></script>
-    <script src="bootstrap/js/bootstrap-scrollspy.js"></script>
-    <script src="bootstrap/js/bootstrap-tab.js"></script>
-    <script src="bootstrap/js/bootstrap-tooltip.js"></script>
-    <script src="bootstrap/js/bootstrap-popover.js"></script>
-    <script src="bootstrap/js/bootstrap-button.js"></script>
-    <script src="bootstrap/js/bootstrap-collapse.js"></script>
-    <script src="bootstrap/js/bootstrap-carousel.js"></script>
-    <script src="bootstrap/js/bootstrap-typeahead.js"></script>
-
-  </body>
+        </div>
+        
+        
+        <div id="projects" class="more">
+        <p class="thick">natural language processing </p>
+        <p class="ex">
+        My interests in natural language processing (NLP) began in the summer of 2011, working with some NLP tools while interning with JPMorgan.
+        The following semester I took an introductory course to AI, CS 3600, where I not only learned more about NLP but eventually led me to starting research under Dr. Ai.
+        My research focuses on the analysis of "hot topics" in social networks using NLP techniques.
+        </p>
+        <p class="thick">strong induction</p>
+        <p class="ex">
+        First time undergraduate CS TAs are required to present an artifact, a project or contribution to the class they are teaching.
+        As I teach a proofs and discrete math course, I created a postage problem generator that tested one's knowledge for completing strong induction proofs. 
+        It is written in Java; it can be run <b><a href = "/~mfong8/postage.html">here</a></b> in browser or it can be downloaded as an executable jar <b><a href="/~mfong8/Files/mfong_strong_induction.jar">here</a></b>.
+        </p>
+        </div>
+        
+   
+        
+        <div id="courses" class="more">
+        <!-- <hr align="center" width="50%" /> -->
+        <p>spring 2012 </p>
+        <p class="ex">
+            CS 3240 - Languages and Computation</br>
+            CS 3251 - Computer Networking I </br>
+            CS 3630 - Perception &amp; Robotics </br>
+            CS 4290 - Advanced Computer Organization </br>
+            CS 4911 - Design Capstone Project </br>
+            CS 3600 TA - Introduction to Artificial Intelligence
+        </p>
+        <p>fall 2012</p>
+        <p class="ex">
+            CS 2804 - Special Topics: Advanced Object Oriented Programming</br>
+            CS 3510 - Design &amp; Analysis: Algorithms </br>
+            CS 4635 - Knowledge Based AI </br>
+            ISYE 3770 - Statistics &amp; Applications </br>
+            CS 3600 TA - Introduction to Artificial Intelligence 
+        </p>
+        <p>spring 2012</p>
+        <p class="ex">
+            CS 3210 - Operating System Design</br>
+            CS 4001 - Computing &amp; Society</br>
+            CS 4641 - Machine Learning</br>
+            CS 4699 - Undergraduate Research</br>
+            LCC 3403 - Technical Communication</br>
+            CS 2050 TA - Intro to Discrete Math for CS
+        </p>
+        <p>fall 2011</p>
+        <p class="ex">
+            CS 2200 - Computer Systems &amp; Networks</br>
+            CS 2340 - Objects &amp; Design</br>
+            CS 3600 - Introduction to Artificial Intelligence</br>
+            CS 4801 - Undergraduate TA Course</br>
+            CS 4903 - Special Topics (UTA)</br>
+            ECON 2106 - Microeconomics</br>
+            MATH 3012 - Applied Combinatorics</br>
+            CS 2050 TA - Intro to Discrete Math for CS
+        </p>
+        <p>spring 2011</p>
+        <p class="ex">
+        CS 1050 - Constructing Proofs</br>
+        CS 2110 - Computer Organization &amp; Programming</br>
+        HPS 1040 - Health</br>
+        MATH 2605 - Calculus III for CS</br>
+        PSYC 1101 - Intro to Psychology
+        </p>
+        <p>fall 2010</p>
+        <p class="ex">
+        CS 1100 - Freshmen Leap for CS</br>
+        CS 1332 - Data Structures &amp; Algorithms</br>
+        EAS 1601 - Habitable Planet</br>
+        ENGL 1102 - English Composition II</br>
+        MATH 1502 - Calculus II
+        </p>
+        </div>
+        
+        <div id="resume" class="more">
+        
+        <a href="http://www.instagram.com/skyangelisme" target="_instagram">
+      <img src="bootstrap/ico/instagram.ico" title="instagram" alt="instagram" width="32" height="32"></a>
+      <a href="http://www.github.com/mlfong" target="_github">
+      <img src="bootstrap/ico/github.jpg" title="github" alt="github" width="32" height="32"></a>
+      <a href="https://www.dropbox.com/s/w3d7yne0gvu60er/resume.pdf" target="_resume">
+      <img src="bootstrap/ico/resume.png" title="resume" alt="resume" width="32" height="32"></a>
+        </div>
+  
+        
+        
+</div>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>
