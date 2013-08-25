@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple icons</title>
+    <link href="https://developers.google.com/maps/documentation/javascript/examples/default.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+function initialize() {
+  var center_v = new google.maps.LatLng(0,0); 
+  var mapOptions = {
+    zoom: 2,
+    center: center_v,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  }
+  var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+  setMarkers(map,  locations);
+}
+
+var locations =[['ATL', 'https://playfoursquare.s3.amazonaws.com/badge/57/G3QGSNCS1XXY3KTU.png', 33.7725569213, -84.3928527832],['Seattleite', 'https://playfoursquare.s3.amazonaws.com/badge/57/STSS14RQYGKYEVJO.png', 47.6510410937, -122.347328067],['Sakura', 'https://playfoursquare.s3.amazonaws.com/badge/57/DYKE0LW2GY3RA223.png', 35.6869123353, 139.773612109],['Keep Austin Weird', 'https://playfoursquare.s3.amazonaws.com/badge/57/D3J3HVRVOQKXLGWF.png', 30.2678890805, -97.7416491508]];
+function setMarkers(map) {
+  for(var i = 0; i < locations.length; i++){
+    var loc = locations[i];
+    var image = loc[1];
+    var myLatLng = new google.maps.LatLng(loc[2], loc[3]);
+    var marker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      icon: image
+    });
+  }
+}
+  
+google.maps.event.addDomListener(window, "load", initialize);
+
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+</html>
+
+    
