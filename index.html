@@ -4,13 +4,43 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Cousine' rel='stylesheet' type='text/css'>
 <STYLE>
 <!--
 a {text-decoration:none}
 A:LINK    {Color: #000000}
 A:VISITED {Color: #000000}
 A:HOVER   {Color: #C0C0C0}
+
+div.mm {
+    width: 75%;
+    height: 1px;
+		margin-top: 13%;
+    margin-left: 25%;
+    font-family: 'Cousine', sans-serif;
+}
+div.ff {
+  margin-left: 25%;
+  font-family: 'Cousine', sans-serif;
+  height: 1px;
+}
+
+html, body {
+  height: 100%;
+}
+#wrap { 
+  min-height: 100%; 
+}
+#main {
+  overflow:auto;
+  padding-bottom: 150px;
+}
+
+#footer {
+  position: relative;
+  margin-top: -40px;
+  height: 10px;
+  clear:both;} 
 //-->
 
 </STYLE>
@@ -18,152 +48,25 @@ A:HOVER   {Color: #C0C0C0}
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>mlfong</title>
 <link rel="icon" type="image/png" href="/favicon.png">     
-        <link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
+   
 </head>
-</br></br>
-</br></br>
-</br></br>
-<p align="center">
-<font size="6" face="Open Sans" color="black">
-Man Fong
-</font>
 
-<font size="4" face="Open Sans" color="black">
-<hr align="center" width="50%" />
+<div id="wrap"><div id="main"><div class="mm">
+man fong</br>
+-------------</br>
+ads engineer @ microsoft</br>
+cs alum from georgia tech</br>
+former AI ta</br></br>
+</div></div></div>
 
-<p align="center">
-
-<a href="#" id="about-show" class="showLink" onclick="showHide('about');return false;">
-about
-</a>
-
-<a href="#" id="projects-show" class="showLink" onclick="showHide('projects');return false;">
-projects
-</a>
-
-<a href="#" id="courses-show" class="showLink" onclick="showHide('courses');return false;">
-courses
-</a>
-
-<a href="#" id="resume-show" class="showLink" onclick="showHide('resume');return false;">
-follow-me
-</a>
-
-</font>
-
-</p>
-<hr align="center" width="50%" />
-
-<body>
-<div id="wrap">
-
-        <div id="about" class="more">
-          <!-- <i> <p class="thick">software gardener</p> </i> -->
-        <p class="about">
-          Ads engineer, Georgia Tech alum, former 
-           <u><a href="http://www.cc.gatech.edu/~riedl/classes/2013/cs3600/index.html" target="_aita">artificial intelligence teaching assistant</a></u>
-          </br></br>
-          Outside of work I like to play games, drink bubble tea, and <span title="Powered by 4sq + Gmaps API!"><u><a href="/map.html" target="_map">travel</a></u></span>.
-        </p>
-        </div>
-        
-        
-        <div id="projects" class="more">
-        <p class="thick">
-            plus
-            </p>
-        <p class="ex">
-        Stemming from a sudden interest in a certain music group, I began using minus.com more. However having been accustomed to imgur's "download all" button, the new site was very lacking to me. </br> This script exposes minus' use of JSON in their HTML and downloads an entire gallery of pictures. It uses Python's <i>multiprocessing</i> module (as opposed to <i>threading</i> which is actually slower) and is Windows and *nix safe. The gallery title becomes the directory in which the gallery is downloaded (Unicode supported), all while keeping the integrity of the image ordering of the album. <a href="http://mlfong.github.io/plus/">Check it out here &rarr;</a>
-        </p>
-        </br>
-
-        <p class="thick">natural language processing </p>
-        <p class="ex">
-        My interests in natural language processing (NLP) began in the summer of 2011, working with some NLP tools while interning with JPMorgan.
-        The following semester I took an introductory course to AI, CS 3600, where I not only learned more about NLP but eventually led me to starting research under Dr. Ai.
-        My research focuses on the analysis of "hot topics" in social networks using NLP techniques.
-        </p>
-
-        </br>
-
-        <p class="thick">strong induction</p>
-        <p class="ex">
-        First time undergraduate CS TAs are required to present an artifact, a project or contribution to the class they are teaching.
-        As I teach a proofs and discrete math course, I created a postage problem generator that tested one's knowledge for completing strong induction proofs. 
-        </div>
-        
-            
-        
-        <div id="courses" class="more">
-        <!-- <hr align="center" width="50%" /> -->
-        <p>spring 2012 </p>
-        <p class="ex">
-            CS 3240 - Languages and Computation</br>
-            CS 3251 - Computer Networking I </br>
-            CS 3630 - Perception &amp; Robotics </br>
-            CS 4290 - Advanced Computer Organization </br>
-            CS 4911 - Design Capstone Project </br>
-            CS 3600 TA - Introduction to Artificial Intelligence
-        </p>
-        <p>fall 2012</p>
-        <p class="ex">
-            CS 2804 - Special Topics: Advanced Object Oriented Programming</br>
-            CS 3510 - Design &amp; Analysis: Algorithms </br>
-            CS 4635 - Knowledge Based AI </br>
-            ISYE 3770 - Statistics &amp; Applications </br>
-            CS 3600 TA - Introduction to Artificial Intelligence 
-        </p>
-        <p>spring 2012</p>
-        <p class="ex">
-            CS 3210 - Operating System Design</br>
-            CS 4001 - Computing &amp; Society</br>
-            CS 4641 - Machine Learning</br>
-            CS 4699 - Undergraduate Research</br>
-            LCC 3403 - Technical Communication</br>
-            CS 2050 TA - Intro to Discrete Math for CS
-        </p>
-        <p>fall 2011</p>
-        <p class="ex">
-            CS 2200 - Computer Systems &amp; Networks</br>
-            CS 2340 - Objects &amp; Design</br>
-            CS 3600 - Introduction to Artificial Intelligence</br>
-            CS 4801 - Undergraduate TA Course</br>
-            CS 4903 - Special Topics (UTA)</br>
-            ECON 2106 - Microeconomics</br>
-            MATH 3012 - Applied Combinatorics</br>
-            CS 2050 TA - Intro to Discrete Math for CS
-        </p>
-        <p>spring 2011</p>
-        <p class="ex">
-        CS 1050 - Constructing Proofs</br>
-        CS 2110 - Computer Organization &amp; Programming</br>
-        HPS 1040 - Health</br>
-        MATH 2605 - Calculus III for CS</br>
-        PSYC 1101 - Intro to Psychology
-        </p>
-        <p>fall 2010</p>
-        <p class="ex">
-        CS 1100 - Freshmen Leap for CS</br>
-        CS 1332 - Data Structures &amp; Algorithms</br>
-        EAS 1601 - Habitable Planet</br>
-        ENGL 1102 - English Composition II</br>
-        MATH 1502 - Calculus II
-        </p>
-        </div>
-        
-        <div id="resume" class="more">
-        
-        <a href="http://www.instagram.com/skyangelisme" target="_instagram">
-      <img src="ico/instagram.ico" title="instagram" alt="instagram" width="32" height="32"></a>
-      <a href="http://www.github.com/mlfong" target="_github">
-      <img src="ico/github.jpg" title="github" alt="github" width="32" height="32"></a>
-      <a href="https://www.dropbox.com/s/w3d7yne0gvu60er/resume.pdf" target="_resume">
-      <img src="ico/resume.png" title="resume" alt="resume" width="32" height="32"></a>
-        </div>
-  
-        
-        
+<div id="footer">
+<div class="ff">
+  <a href="http://github.com/mlfong" title="check out my projects" target="_github">[github]</a>
+  <a href="http://instagram.com/skyangelisme" title="day to day happiness" target="_instagram">[instagram]</a>
+  <a href="http://www.linkedin.com/pub/man-fong/33/427/13" title="the official me" target="_linkedin">[linkedin]</a>
 </div>
+</div>        
+
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
