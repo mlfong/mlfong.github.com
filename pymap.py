@@ -12,9 +12,10 @@ first_half = r"""<!DOCTYPE html>
     <script>
 function initialize() {
   var center_v = new google.maps.LatLng(0,0); 
+  var center_hawaii = new google.maps.LatLng(21.3114, 220.7964);
   var mapOptions = {
-    zoom: 2,
-    center: center_v,
+    zoom: 3,
+    center: center_hawaii,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   }
   var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
@@ -50,7 +51,7 @@ google.maps.event.addDomListener(window, "load", initialize);
 """
 assert len(sys.argv) > 1
 oauth_token = sys.argv[1]
-foursquare_json_str = "https://api.foursquare.com/v2/users/self/badges?oauth_token=" + oauth_token
+foursquare_json_str = "https://api.foursquare.com/v2/users/self/badges?oauth_token=" + oauth_token + "&v=20140414"
 fjs = foursquare_json_str
 
 city_badges = ["What Happens in Vegas", "Kollen Roar", "Harbour City", "Charm City", "KL-lite", "Ciutat Comtal", \

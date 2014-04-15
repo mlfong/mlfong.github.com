@@ -4,22 +4,22 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <title>mlfong &#9992;&#9992;&#9992;</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
     <link href="https://developers.google.com/maps/documentation/javascript/examples/default.css" rel="stylesheet">
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script>
 function initialize() {
   var center_v = new google.maps.LatLng(0,0); 
+  var center_hawaii = new google.maps.LatLng(21.3114, 220.7964);
   var mapOptions = {
-    zoom: 2,
-    center: center_v,
+    zoom: 3,
+    center: center_hawaii,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   }
   var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
   setMarkers(map,  locations);
 }
 
-var locations =[['ATL', 'https://playfoursquare.s3.amazonaws.com/badge/57/G3QGSNCS1XXY3KTU.png', 33.7725569213, -84.3928527832],['Seattleite', 'https://playfoursquare.s3.amazonaws.com/badge/57/STSS14RQYGKYEVJO.png', 47.6510410937, -122.347328067],['Sakura', 'https://playfoursquare.s3.amazonaws.com/badge/57/DYKE0LW2GY3RA223.png', 35.6869123353, 139.773612109],['Keep Austin Weird', 'https://playfoursquare.s3.amazonaws.com/badge/57/D3J3HVRVOQKXLGWF.png', 30.2678890805, -97.7416491508]];
+var locations =[['ATL', 'https://playfoursquare.s3.amazonaws.com/badge/57/G3QGSNCS1XXY3KTU.png', 33.7725569213, -84.3928527832],['Seattleite', 'https://playfoursquare.s3.amazonaws.com/badge/57/STSS14RQYGKYEVJO.png', 47.6510410937, -122.347328067],['Sakura', 'https://playfoursquare.s3.amazonaws.com/badge/57/DYKE0LW2GY3RA223.png', 35.6869123353, 139.773612109],['Keep Austin Weird', 'https://playfoursquare.s3.amazonaws.com/badge/57/D3J3HVRVOQKXLGWF.png', 30.2678890805, -97.7416491508],['Beantown', 'https://playfoursquare.s3.amazonaws.com/badge/57/B4W50CF43QVPZROM.png', 42.360077796, -71.0553336717]];
 function setMarkers(map) {
   for(var i = 0; i < locations.length; i++){
     var loc = locations[i];
