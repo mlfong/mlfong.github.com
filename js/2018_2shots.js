@@ -18,6 +18,11 @@
 
     var events = [
       {
+        content: 'Slot 1',
+        startDate: new Date(2018, 05, 09, 09, 00),
+        endDate:   new Date(2018, 05, 09, 10, 30)
+      },
+      {
         content: memberEventContent('Ogino Yuka', 'http://stage48.net/wiki/images/5/5b/OginoYukaNIII2017.jpg'),
         disabled: true,
         meeting: true,
@@ -37,6 +42,11 @@
       },
       // slot 2
       {
+        content: 'Slot 2',
+        startDate: new Date(2018, 05, 09, 10, 30),
+        endDate:   new Date(2018, 05, 09, 12, 00)
+      },
+      {
         content: memberEventContent('Oguni Yui', 'http://stage48.net/wiki/images/6/6e/OguriYui8July2017.jpg'),
         startDate: new Date(2018, 05, 09, 10, 30),
         endDate:   new Date(2018, 05, 09, 11, 00)
@@ -51,13 +61,28 @@
         startDate: new Date(2018, 05, 09, 11, 30),
         endDate:   new Date(2018, 05, 09, 12, 00)
       },
-      // nothing in slot 3
       {
-        content: 'Lunch break',
+        content: memberEventContent('Fukuoka Seina', 'http://stage48.net/wiki/images/e/ee/FukuokaSeinaB2017.jpg'),
+        startDate: new Date(2018, 05, 09, 12, 00),
+        endDate:   new Date(2018, 05, 09, 12, 30)
+      },
+      // slot 3
+      {
+        content: 'Slot 3',
         startDate: new Date(2018, 05, 09, 12, 00),
         endDate:   new Date(2018, 05, 09, 13, 30)
       },
+      {
+        content: 'Lunch break',
+        startDate: new Date(2018, 05, 09, 12, 30),
+        endDate:   new Date(2018, 05, 09, 13, 30)
+      },
       // slot 4
+      {
+        content: 'Slot 4',
+        endDate: new Date(2018, 05, 09, 15, 00),
+        startDate:   new Date(2018, 05, 09, 13, 30)
+      },
       {
         content: memberEventContent('Oba Mina', 'http://stage48.net/wiki/images/2/24/ObaMinaKII2017.jpg'),
         startDate: new Date(2018, 05, 09, 13, 30),
@@ -69,6 +94,11 @@
         endDate:   new Date(2018, 05, 09, 14, 30)
       },
       // slot 5
+      {
+        content: 'Slot 5',
+        startDate: new Date(2018, 05, 09, 15, 00),
+        endDate:   new Date(2018, 05, 09, 16, 30)
+      },
       {
         content: memberEventContent('Kodama Haruka', 'http://stage48.net/wiki/images/6/62/KodamaHarukaH6thAnni.jpg'),
         startDate: new Date(2018, 05, 09, 15, 00),
@@ -86,6 +116,11 @@
       },
       /////////////////// slot 6
       {
+        content: 'Slot 6',
+        endDate: new Date(2018, 05, 09, 18, 00),
+        startDate:   new Date(2018, 05, 09, 16, 30)
+      },
+      {
         content: memberEventContent('Furuhata Nao', 'http://stage48.net/wiki/images/4/4e/FuruhataNaoKII2017.jpg'),
         startDate: new Date(2018, 05, 09, 16, 30),
         endDate:   new Date(2018, 05, 09, 17, 00)
@@ -101,7 +136,12 @@
         startDate: new Date(2018, 05, 09, 18, 00),
         endDate:   new Date(2018, 05, 09, 18, 30)
       },
-      // end 30 break
+      // slot 7
+      {
+        content: 'Slot 7',
+        startDate:   new Date(2018, 05, 09, 18, 30),
+        endDate: new Date(2018, 05, 09, 20, 00),
+      },
       {
         content: memberEventContent('Matsui Jurina', 'http://stage48.net/wiki/images/0/02/MatsuiJurinaS2017.jpg'),
         startDate: new Date(2018, 05, 09, 18, 30),
@@ -112,11 +152,32 @@
         startDate: new Date(2018, 05, 09, 19, 00),
         endDate:   new Date(2018, 05, 09, 19, 30)
       },
-
+      // slot 8
+      {
+        content: 'Slot 8',
+        startDate:   new Date(2018, 05, 09, 20, 00),
+        endDate: new Date(2018, 05, 09, 21, 30),
+      },
+      {
+        content: memberEventContent('Moriyasu Madoka', 'http://stage48.net/wiki/images/b/b2/MoriyasuMadokaKIV6thAnni.jpg'),
+        startDate: new Date(2018, 05, 09, 20, 00),
+        endDate:   new Date(2018, 05, 09, 20, 30)
+      },
+      {
+        content: memberEventContent('Tani Marika', 'http://stage48.net/wiki/images/9/9e/TaniMarikaE2017.jpg'),
+        startDate: new Date(2018, 05, 09, 20, 30),
+        endDate:   new Date(2018, 05, 09, 21, 00)
+      },
+      // slot forever
+      {
+        content: 'Slot Infinity',
+        startDate: new Date(2018, 05, 09, 21, 30),
+        endDate:   new Date(2018, 05, 09, 21, 31)
+      },
       {
         content: llBBEventContent('LLBB', 'https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/23755545_10214736526508464_2589220734816954186_n.jpg?oh=6a6a772c26b1ea6a185181559aae0ffd&oe=5AD23B83'),
-        startDate: new Date(2018, 05, 09, 19, 30),
-        endDate:   new Date(2018, 05, 09, 23, 59),
+        startDate: new Date(2018, 05, 09, 21, 30),
+        endDate:   new Date(2018, 05, 09, 23, 59)
       },
      
 
