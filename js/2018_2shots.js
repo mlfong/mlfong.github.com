@@ -61,11 +61,6 @@
         startDate: new Date(2018, 05, 09, 11, 30),
         endDate:   new Date(2018, 05, 09, 12, 00)
       },
-      {
-        content: memberEventContent('Fukuoka Seina', 'http://stage48.net/wiki/images/e/ee/FukuokaSeinaB2017.jpg'),
-        startDate: new Date(2018, 05, 09, 12, 00),
-        endDate:   new Date(2018, 05, 09, 12, 30)
-      },
       // slot 3
       {
         content: 'Slot 3',
@@ -76,6 +71,11 @@
         content: 'Lunch break',
         startDate: new Date(2018, 05, 09, 12, 30),
         endDate:   new Date(2018, 05, 09, 13, 30)
+      },
+      {
+        content: memberEventContent('Moriyasu Madoka', 'http://stage48.net/wiki/images/b/b2/MoriyasuMadokaKIV6thAnni.jpg'),
+        startDate: new Date(2018, 05, 09, 12, 00),
+        endDate:   new Date(2018, 05, 09, 12, 30)
       },
       // slot 4
       {
@@ -159,7 +159,7 @@
         endDate: new Date(2018, 05, 09, 21, 30),
       },
       {
-        content: memberEventContent('Moriyasu Madoka', 'http://stage48.net/wiki/images/b/b2/MoriyasuMadokaKIV6thAnni.jpg'),
+        content: memberEventContent('Fukuoka Seina', 'http://stage48.net/wiki/images/e/ee/FukuokaSeinaB2017.jpg'),
         startDate: new Date(2018, 05, 09, 20, 00),
         endDate:   new Date(2018, 05, 09, 20, 30)
       },
