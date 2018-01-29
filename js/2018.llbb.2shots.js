@@ -173,37 +173,18 @@
         content: llBBEventContent('MLBB', 'https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/23755066_10214673225006057_2741816833818606288_n.jpg?oh=d85b5f1325523eca5d20f07e96d503fa&oe=5AB4A9A6'),
         startDate: new Date(2018, 05, 09, 21, 30),
         endDate:   new Date(2018, 05, 09, 23, 59)
-      },
-     
-
-      
-      // {
-      //   ,
-      //   content: 'Earth Day Lunch',
-      //   disabled: true,
-      //   endDate: new Date(2018, 06, 09, 09, 30),
-      //   meeting: true,
-      //   reminder: true,
-      //   startDate: new Date(2018, 06, 09, 09, 00),
-      // },
+      }
     ];
 
     var agendaView = new Y.SchedulerAgendaView();
-    var dayView = new Y.SchedulerDayView();
-    var weekView = new Y.SchedulerWeekView();
-    var monthView = new Y.SchedulerMonthView();
-
     var eventRecorder = new Y.SchedulerEventRecorder();
-
-    var myViews = [dayView, weekView, monthView, agendaView];
-    myViews = [agendaView];
+    var myViews = [agendaView];
 
     new Y.Scheduler(
       {
         activeView: agendaView,
         boundingBox: '#myScheduler',
         date: new Date(2018, 05, 09),
-        // eventRecorder: eventRecorder
         items: events,
         render: true,
         views: myViews
@@ -211,3 +192,8 @@
     );
   }
 );
+
+$(window).load(function() {
+ $('.yui3-widget.component.scheduler-view.scheduler-view-agenda')[0].style="height: 100%;";
+ $('.yui3-widget-bd.scheduler-view-scrollable')[0].style="height: 90%;";     
+});

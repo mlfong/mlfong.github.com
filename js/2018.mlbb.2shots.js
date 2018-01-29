@@ -1,4 +1,4 @@
-
+// https://alloyui.com/tutorials/scheduler/
   YUI().use(
   'aui-scheduler',
   function(Y) {
@@ -177,42 +177,30 @@
       {
         content: llBBEventContent('LLBB', 'https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/23755545_10214736526508464_2589220734816954186_n.jpg?oh=6a6a772c26b1ea6a185181559aae0ffd&oe=5AD23B83'),
         startDate: new Date(2018, 05, 09, 21, 30),
-        endDate:   new Date(2018, 05, 09, 23, 59)
-      },
-     
+        endDate:   new Date(2018, 05, 09, 23, 59),
+        meeting: true
 
-      
-      // {
-      //   ,
-      //   content: 'Earth Day Lunch',
-      //   disabled: true,
-      //   endDate: new Date(2018, 06, 09, 09, 30),
-      //   meeting: true,
-      //   reminder: true,
-      //   startDate: new Date(2018, 06, 09, 09, 00),
-      // },
+      }
     ];
 
     var agendaView = new Y.SchedulerAgendaView();
-    var dayView = new Y.SchedulerDayView();
-    var weekView = new Y.SchedulerWeekView();
-    var monthView = new Y.SchedulerMonthView();
-
     var eventRecorder = new Y.SchedulerEventRecorder();
-
-    var myViews = [dayView, weekView, monthView, agendaView];
-    myViews = [agendaView];
+    var myViews = [agendaView];
 
     new Y.Scheduler(
       {
         activeView: agendaView,
         boundingBox: '#myScheduler',
         date: new Date(2018, 05, 09),
-        // eventRecorder: eventRecorder
         items: events,
         render: true,
-        views: myViews
+        views: myViews,
       }
     );
   }
 );
+
+$(window).load(function() {
+ $('.yui3-widget.component.scheduler-view.scheduler-view-agenda')[0].style="height: 100%;";
+ $('.yui3-widget-bd.scheduler-view-scrollable')[0].style="height: 90%;";     
+});
