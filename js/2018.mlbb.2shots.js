@@ -47,7 +47,7 @@
         endDate:   new Date(2018, 05, 09, 12, 00)
       },
       {
-        content: memberEventContent('Oguni Yui', 'http://stage48.net/wiki/images/6/6e/OguriYui8July2017.jpg'),
+        content: memberEventContent('Oguri Yui', 'http://stage48.net/wiki/images/6/6e/OguriYui8July2017.jpg'),
         startDate: new Date(2018, 05, 09, 10, 30),
         endDate:   new Date(2018, 05, 09, 11, 00)
       },
@@ -110,7 +110,7 @@
         endDate:   new Date(2018, 05, 09, 16, 00)
       },
       {
-        content: memberEventContent('Obata Yuna', 'http://stage48.net/wiki/images/c/c2/MatsuokaHanaTII6thAnni.jpg'),
+        content: memberEventContent('Matsuoka Hana', 'http://stage48.net/wiki/images/c/c2/MatsuokaHanaTII6thAnni.jpg'),
         startDate: new Date(2018, 05, 09, 16, 00),
         endDate:   new Date(2018, 05, 09, 16, 30)
       },
