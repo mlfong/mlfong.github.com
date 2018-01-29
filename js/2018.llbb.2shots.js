@@ -105,7 +105,7 @@
         endDate:   new Date(2018, 05, 09, 16, 00)
       },
       {
-        content: memberEventContent('Obata Yuna', 'http://stage48.net/wiki/images/c/c2/MatsuokaHanaTII6thAnni.jpg'),
+        content: memberEventContent('Matsuoka Hana', 'http://stage48.net/wiki/images/c/c2/MatsuokaHanaTII6thAnni.jpg'),
         startDate: new Date(2018, 05, 09, 16, 00),
         endDate:   new Date(2018, 05, 09, 16, 30)
       },
