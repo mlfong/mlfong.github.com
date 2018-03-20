@@ -1,4 +1,7 @@
 // https://alloyui.com/tutorials/scheduler/
+//ヒキ full
+//ヨリ half
+
   YUI().use(
   'aui-scheduler',
   function(Y) {
@@ -159,7 +162,7 @@
         endDate: new Date(2018, 05, 09, 21, 30),
       },
       {
-        content: memberEventContent('Fukuoka Seina', 'http://stage48.net/wiki/images/e/ee/FukuokaSeinaB2017.jpg'),
+        content: memberEventContent('Fukuoka Seina [ヒキ]', 'http://stage48.net/wiki/images/e/ee/FukuokaSeinaB2017.jpg'),
         startDate: new Date(2018, 05, 09, 20, 00),
         endDate:   new Date(2018, 05, 09, 20, 30)
       },
@@ -167,6 +170,11 @@
         content: memberEventContent('Tani Marika', 'http://stage48.net/wiki/images/9/9e/TaniMarikaE2017.jpg'),
         startDate: new Date(2018, 05, 09, 20, 30),
         endDate:   new Date(2018, 05, 09, 21, 00)
+      },
+      {
+        content: memberEventContent('Shiroma Miru', 'http://www.stage48.net/wiki/images/9/91/ShiromaMiruM2017.jpg'),
+        startDate: new Date(2018, 05, 09, 21, 00),
+        endDate:   new Date(2018, 05, 09, 21, 30)
       },
       // slot forever
       {
