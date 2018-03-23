@@ -93,6 +93,11 @@
         startDate: new Date(2018, 05, 09, 14, 00),
         endDate:   new Date(2018, 05, 09, 14, 30)
       },
+      {
+        content: memberEventContent('Iwata Hina', 'http://stage48.net/wiki/images/6/60/IwataHinaKKSMay2017.jpg'),
+        startDate: new Date(2018, 05, 09, 14, 30),
+        endDate:   new Date(2018, 05, 09, 15, 00)
+      },
       // slot 5
       {
         content: 'Slot 5',
@@ -147,6 +152,11 @@
         startDate: new Date(2018, 05, 09, 19, 00),
         endDate:   new Date(2018, 05, 09, 19, 30)
       },
+      {
+        content: memberEventContent('Matsumura Kaori', 'http://stage48.net/wiki/images/e/e8/MatsumuraKaoriKII2017.jpg'),
+        startDate: new Date(2018, 05, 09, 19, 30),
+        endDate:   new Date(2018, 05, 09, 20, 00)
+      },
       // slot 8
       {
         content: 'Slot 8',
@@ -162,6 +172,11 @@
         content: memberEventContent('Suda Akari', 'http://stage48.net/wiki/images/8/82/SudaAkariE2017.jpg'),
         startDate: new Date(2018, 05, 09, 20, 30),
         endDate:   new Date(2018, 05, 09, 21, 00)
+      },
+      {
+        content: memberEventContent('Tani Marika', 'http://stage48.net/wiki/images/9/9e/TaniMarikaE2017.jpg'),
+        startDate: new Date(2018, 05, 09, 21, 00),
+        endDate:   new Date(2018, 05, 09, 21, 30)
       },
       // slot forever
       {
